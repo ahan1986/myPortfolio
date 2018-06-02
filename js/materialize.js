@@ -5,10 +5,12 @@ $(document).ready(function(){
       $("nav").addClass("navShrink");
       $("#nav-mobile").addClass("shrink");
       $(".one").addClass("oneShrink");
+      $("#one").addClass("oneImage");
     } else {
       $("nav").removeClass("navShrink");
       $("#nav-mobile").removeClass("shrink");
       $(".one").removeClass("oneShrink");
+      $("#one").removeClass("oneImage"); 
     }
 
   };

@@ -51,7 +51,7 @@ nav {
 }
 /* -===== profileimage ======- */
 .one {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     -webkit-transition: all 0.4s ease;
     transition: all 0.6s ease;
 }
@@ -61,16 +61,25 @@ nav {
     transform: translate(20px, 50px);
     box-shadow: 10px 6px 20px black;
     width: 90%;
+    border: 1px solid black;
 }
-#one {
+img {
     transform: translate(500px, -90px);
-    clip-path: circle(22.2% at 66% 28%);
-    z-index: 10px;
     -webkit-transition: all 0.4s ease;
     transition: all 0.6s ease;
+}
+#one {
+    z-index: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px black;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.6s ease;
+}
+.oneImage {
+    transform: translate(970px, -80px);
+    box-shadow: 6px 6px 10px black;
 }
 /* -===== aboutMe ======- */
 .me {
     z-index: 20px;
-    
 }
