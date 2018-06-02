@@ -2,12 +2,26 @@ body {
     background-color: #B12C25;
 }
 .brand-logo {
-    margin-left: 10%;  
+    margin-left: 7%;
 }
-#shrink {
-    background-color: #B12C25;
-    border-radius: 0 0 20px 20px;
+/* ===== Navbar ==== */
+nav {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
 }
+#nav-mobile {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.navShrink {
+    border-radius: 20px 20px 20px 20px;
+}
+.shrink {
+    background-color: #D36D3D;
+    border-radius: 20px 20px 20px 20px;
+}
+/* ============ */
 #imgTop {
     /* Parallax */
     height: 100%;
