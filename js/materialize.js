@@ -2,15 +2,25 @@ $(document).ready(function(){
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("nav").offset().top > 100) {
-      $("nav").addClass("navShrink");
-      $("#nav-mobile").addClass("shrink");
-      $(".one").addClass("oneShrink");
-      $("#one").addClass("oneImage");
+      $("nav").addClass("navShrink"); 
+      
     } else {
       $("nav").removeClass("navShrink");
-      $("#nav-mobile").removeClass("shrink");
-      $(".one").removeClass("oneShrink");
-      $("#one").removeClass("oneImage"); 
+      
+    }
+
+    if($("nav").offset().top > 50) {
+        $("#one").addClass("oneImage");
+        $("#nav-mobile").addClass("shrink");
+        $(".one").addClass("oneShrink");
+        $(".me").addClass("meFocus");
+        $(".me").addClass("scale-in");
+    } else {
+        $("#one").removeClass("oneImage"); 
+        $(".one").removeClass("oneShrink");
+        $("#nav-mobile").removeClass("shrink");
+        $(".me").removeClass("meFocus");
+        $(".me").removeClass("scale-in");
     }
 
   };
@@ -18,7 +28,7 @@ $(document).ready(function(){
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
-
+  // using the above function to get the scale-in working when scrolling
   
     $('.carousel').carousel();
   });
