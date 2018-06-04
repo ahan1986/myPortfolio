@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $(".trail").hide();
     $("#work").hide();
+    $(".trail").hide();
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("nav").offset().top > 100) {
@@ -34,11 +35,14 @@ $(document).ready(function(){
     }
 
     if($("nav").offset().top > 10) {
-        $(".trail").fadeIn("slow");
+        $(".trail").fadeIn();
         $("#work").fadeIn("slow");
+        
     } else {
         $(".trail").fadeOut();
+        $("#work").fadeOut("slow");
     }
+
 
   };
   // Collapse now if page is not at top

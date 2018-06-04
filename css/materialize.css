@@ -122,12 +122,28 @@ img {
     transition: all 0.6s ease;
 }
 /* ----Trail -----*/
+
 .trail {
-    height: 90px;
-    width: 90px;
+    margin: auto; /* puts elements in the center */
+    height: 40px;
+    width: 40px;
     background-color: #f2d3c1;
     border: 1px solid black;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    animation: slidein 1s linear 1s infinite alternate;
 }
+@keyframes slidein {
+    from {
+      margin-left: 50%;
+      width: 40px; 
+    }
+  
+    to {
+      margin-left: 45%;
+      width: 40px;
+    }
+  }
 
 /* ====== PORTFOLIO ======= */
 #work {
@@ -140,6 +156,30 @@ img {
     font-size: 48px;
     border: 1px solid black;
 }
+#project {
+
+}
+#cinemappr {
+
+    border: 1px solid black;
+}
+/* ------- pop out effect ------- */
+.popout {
+    animation: popout 1s ease;
+    -webkit-animation: popout 1s ease;
+}
+@keyframes popout {
+    from{transform:scale(0)}
+    80%{transform:scale(1.2)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(0)}
+    80%{-webkit-transform:scale(1.2)}
+    to{-webkit-transform:scale(1)}
+}
+
+
 
 #test {
     height: 80vh;
