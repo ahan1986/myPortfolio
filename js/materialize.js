@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    $(".trail").hide();
+    $("#work").hide();
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("nav").offset().top > 100) {
@@ -9,18 +11,33 @@ $(document).ready(function(){
       
     }
 
-    if($("nav").offset().top > 50) {
+    if($("nav").offset().top > 30) {
         $("#one").addClass("oneImage");
         $("#nav-mobile").addClass("shrink");
         $(".one").addClass("oneShrink");
         $(".me").addClass("meFocus");
-        $(".me").addClass("scale-in");
+        $("#me").html(`<div id="meme" class="me">Hello! My name is Andrew Han, and currently, I am a student at Penn Coding BootCamp located in Philadelphia, Pennsylvannia.
+          Previously, I ran a carwash in Downingtown, PA for eight years and sold it on March 2017. If I'm not coding, I am
+          usually on my guitar jamming to random songs. Through Penn Coding Bootcamp, I know I will become the best Fullstack
+          developer in the whole-wide world!</div>`);
+          $("#justMe").fadeIn().html(`<div class="aboutme">About Me</div>`);
+        
+
     } else {
+
         $("#one").removeClass("oneImage"); 
         $(".one").removeClass("oneShrink");
         $("#nav-mobile").removeClass("shrink");
         $(".me").removeClass("meFocus");
-        $(".me").removeClass("scale-in");
+        $("#meme").remove();
+        $(".aboutme").remove();
+    }
+
+    if($("nav").offset().top > 10) {
+        $(".trail").fadeIn("slow");
+        $("#work").fadeIn("slow");
+    } else {
+        $(".trail").fadeOut();
     }
 
   };
