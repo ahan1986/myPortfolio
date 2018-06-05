@@ -129,6 +129,7 @@ img {
     width: 40px;
     background-color: #f2d3c1;
     border: 1px solid black;
+    z-index: 10px;
     animation: popout 1s ease;
     -webkit-animation: popout 1s ease;
 }

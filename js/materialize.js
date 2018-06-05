@@ -59,6 +59,25 @@ $(document).ready(function(){
     } else {
       $("#trail3").slideUp();
     }
+// ------ Trail#2 -----------
+
+    if($("nav").offset().top > 1100) {
+      $("#trail4").fadeIn();
+    } else {
+        $("#trail4").slideUp();
+    }
+    if($("nav").offset().top > 1150) {
+      $("#trail5").fadeIn();
+    } else {
+        $("#trail5").slideUp();
+    }
+    if($("nav").offset().top > 1200) {
+      $("#trail6").fadeIn();
+    } else {
+      $("#trail6").slideUp();
+    }
+
+// ==========END of TRAIL ==============
 
     if($("nav").offset().top > 720) {
       $("#cinemappr").addClass("oneImage1 z-depth-5");
@@ -74,7 +93,7 @@ $(document).ready(function(){
 
 // ========= Other Projects =========
     //Other Projects first row ----------------------------------
-    if($("nav").offset().top > 1200) {
+    if($("nav").offset().top > 1300) {
       $(".otherProjectsRow .otherProjects:nth-child(1)").addClass("otherProjects1 z-depth-1");
       setTimeout(() => {
         $(".otherProjectsRow .otherProjects:nth-child(2)").addClass("otherProjects1 z-depth-3");
