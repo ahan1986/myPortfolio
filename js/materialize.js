@@ -42,7 +42,12 @@ $(document).ready(function(){
         $(".trail").fadeOut();
         $("#work").fadeOut("slow");
     }
-
+  
+    if($("nav").offset().top > 720) {
+      $("#cinemappr").addClass("oneImage1");
+    } else {
+      $("#cinemappr").removeClass("oneImage1");
+    }
 
   };
   // Collapse now if page is not at top
