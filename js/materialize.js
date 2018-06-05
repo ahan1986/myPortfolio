@@ -35,18 +35,41 @@ $(document).ready(function(){
     }
 
     if($("nav").offset().top > 10) {
-        $(".trail").fadeIn();
+        // $(".trail").fadeIn();
         $("#work").fadeIn("slow");
         
     } else {
-        $(".trail").fadeOut();
+        // $(".trail").fadeOut();
         $("#work").fadeOut("slow");
     }
-  
+//========= Trail ============
+
+    if($("nav").offset().top > 300) {
+      $("#trail1").fadeIn();
+    } else {
+        $("#trail1").slideUp();
+    }
+    if($("nav").offset().top > 390) {
+      $("#trail2").fadeIn();
+    } else {
+        $("#trail2").slideUp();
+    }
+    if($("nav").offset().top > 460) {
+      $("#trail3").fadeIn();
+    } else {
+      $("#trail3").slideUp();
+    }
+
     if($("nav").offset().top > 720) {
       $("#cinemappr").addClass("oneImage1");
     } else {
       $("#cinemappr").removeClass("oneImage1");
+    }
+
+    if($("nav").offset().top > 890) {
+      $("#project2").addClass("project2");
+    } else {
+      $("#project2").removeClass("project2");
     }
 
   };

@@ -124,14 +124,13 @@ img {
 /* ----Trail -----*/
 
 .trail {
-    margin: auto; /* puts elements in the center */
+    /* margin: auto; puts elements in the center */
     height: 40px;
     width: 40px;
     background-color: #f2d3c1;
     border: 1px solid black;
-    -webkit-transition: all 0.6s ease;
-    transition: all 0.6s ease;
-    animation: slidein 1s linear 1s infinite alternate;
+    animation: popout 1s ease;
+    -webkit-animation: popout 1s ease;
 }
 @keyframes slidein {
     from {
@@ -168,9 +167,6 @@ img {
     width: 70%;
     margin-left: 15%;
 }
-#cinemappr {
-    border: 1px solid black;
-}
 /* ------- pop out effect ------- */
 .popout {
     animation: popout 1s ease;
@@ -187,7 +183,6 @@ img {
     to{-webkit-transform:scale(1)}
 }
 #cinemappr {
-    /* border: 1px solid black; */
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
     margin-top: 10px;
@@ -195,10 +190,25 @@ img {
 .oneImage1 {
     -webkit-transition: all 0.4s ease;
     transition: all 0.6s ease;
-    /* transform: translate(770px, -80px); */
     box-shadow: 6px 6px 10px black;
+    margin-left: 20%;
+    height: 200px;
+    border: 1px solid black;
 }
-
+#project2 {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    margin-top: 10px;
+}
+.project2 {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.6s ease;
+    box-shadow: 6px 6px 10px black;
+    margin-left: 1%;
+    margin-right: 20%;
+    height: 200px;
+    border: 1px solid black;
+}
 
 #test {
     height: 80vh;
