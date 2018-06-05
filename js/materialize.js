@@ -61,15 +61,15 @@ $(document).ready(function(){
     }
 
     if($("nav").offset().top > 720) {
-      $("#cinemappr").addClass("oneImage1");
+      $("#cinemappr").addClass("oneImage1 z-depth-5");
     } else {
-      $("#cinemappr").removeClass("oneImage1");
+      $("#cinemappr").removeClass("oneImage1 z-depth-5");
     }
 
     if($("nav").offset().top > 890) {
-      $("#project2").addClass("project2");
+      $("#project2").addClass("project2 z-depth-5");
     } else {
-      $("#project2").removeClass("project2");
+      $("#project2").removeClass("project2 z-depth-5");
     }
 
 // ========= Other Projects =========
