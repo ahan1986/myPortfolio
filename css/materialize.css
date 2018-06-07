@@ -172,6 +172,7 @@ img {
 .popout {
     animation: popout 1s ease;
     -webkit-animation: popout 1s ease;
+    z-index: -1;
 }
 @keyframes popout {
     from{transform:scale(0)}
@@ -195,10 +196,28 @@ img {
     margin-left: 10%;
     height: 200px;
     width: 100%;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 42%;
     -webkit-transition: all 0.4s ease;
     transition: all 0.6s ease;
+}
+
+#project2 {
+    margin-top: 10px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.6s ease;
+}
+.project2 {
+    background-image: url("../img/fightclub.png");
+    box-shadow: 6px 6px 10px black;
+    margin-right: 40%;
+    height: 200px;
+    border: 2px double black;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.6s ease;
+    background-size: 100% 100%;
+    border-radius: 42%;
+    width: 100%;
 }
 /* hide this github portion in js */
 .github {
@@ -212,6 +231,7 @@ img {
     border-radius: 49%;
     transform: translate(60px, -180px);
     border: 5px double black;
+    z-index: 100;
 }
 .hover:hover {
     -webkit-transition: all 0.6s ease;
@@ -223,30 +243,11 @@ img {
     transition: all 0.8s ease;
     box-shadow: 3px 3px 5px black;
 }
-#project2 {
-    margin-top: 10px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.6s ease;
-}
-.project2 {
-    background-image: url("../img/fightclub.png");
-    box-shadow: 6px 6px 10px black;
-    margin-right: 40%;
-    height: 200px;
-    border: 1px solid black;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.6s ease;
-    background-size: 100% 100%;
-    border-radius: 42%;
-    width: 100%;
-}
 
 /* - - -  Other Projects - - -  */
-/* .otherProjects #trivia:hover {
-    opacity: 0.5;
-} */
+
 .text {
-    background-color: #4CAF50;
+    background-color: #867182;
     color: white;
     width: 90%;
     height: 90%;
@@ -256,6 +257,9 @@ img {
     transform: translate(20px, -270px);
     opacity: 0;
     border-radius: 10%;
+}
+.text:hover {
+    opacity: 0.8;
 }
 .otherProjects {
     /* border: 1px solid black; */
@@ -281,9 +285,6 @@ img {
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
 }
-.text:hover {
-    opacity: 0.7;
-}
 
 #api {
     background-image: url("../img/api.png");
@@ -294,12 +295,6 @@ img {
     height: 90%;
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
-}
-#api:hover + .text {
-    opacity: 1;
-}
-#api:hover {
-    opacity: 0.5;
 }
 
 #crystalcollector {
@@ -312,12 +307,6 @@ img {
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
 }
-#crystalcollector:hover + .text {
-    opacity: 1;
-}
-#crystalcollector:hover {
-    opacity: 0.5;
-}
 
 #rockpaper {
     background-image: url("../img/rockpaper.png");
@@ -328,12 +317,6 @@ img {
     height: 90%;
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
-}
-#rockpaper:hover + .text {
-    opacity: 1;
-}
-#rockpaper:hover {
-    opacity: 0.5;
 }
 
 #train {
@@ -346,12 +329,6 @@ img {
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
 }
-#train:hover + .text {
-    opacity: 1;
-}
-#train:hover {
-    opacity: 0.5;
-}
 
 #trivia {
     background-image: url("../img/trivia.png");
@@ -362,12 +339,6 @@ img {
     height: 90%;
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
-}
-#trivia:hover + .text {
-    opacity: 1;
-}
-#trivia:hover {
-    opacity: 0.5;
 }
 
 
