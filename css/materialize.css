@@ -251,12 +251,72 @@ img {
     -webkit-transition: all 0.4s ease;
     transition: all 0.6s ease;
 }
-
 .otherProjects1 {
     animation: popout 1s ease;
     -webkit-animation: popout 1s ease;
     -webkit-transition: all 0.4s ease;
     transition: all 0.6s ease;
+    border-radius: 10%;
+}
+#dbsuper {
+    background-image: url("../img/dbsuper.png");
+    background-size: cover;
+    margin: auto;
+    margin-top: 4%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 15px black;
+}
+#api {
+    background-image: url("../img/api.png");
+    background-size: cover;
+    margin: auto;
+    margin-top: 4%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 15px black;
+}
+#crystalcollector {
+    background-image: url("../img/crystalcollector.png");
+    background-size: cover;
+    margin: auto;
+    margin-top: 4%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 15px black;
+}
+#rockpaper {
+    background-image: url("../img/rockpaper.png");
+    background-size: cover;
+    margin: auto;
+    margin-top: 4%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 15px black;
+}
+#train {
+    background-image: url("../img/train.png");
+    background-size: cover;
+    margin: auto;
+    margin-top: 4%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 15px black;
+}
+#trivia {
+    background-image: url("../img/trivia.png");
+    background-size: cover;
+    margin: auto;
+    margin-top: 4%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 15px black;
 }
 
 #test {

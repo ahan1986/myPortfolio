@@ -4,6 +4,8 @@ $(document).ready(function(){
     $(".trail").hide();
     $(".github").hide();
     $(".github1").hide();
+    $(".otherProjectsRow").children().hide();
+    $(".otherProjectsRow2").children().hide();
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("nav").offset().top > 100) {
@@ -104,6 +106,7 @@ $(document).ready(function(){
 // ========= Other Projects =========
     //Other Projects first row ----------------------------------
     if($("nav").offset().top > 1300) {
+      $(".otherProjectsRow").children().show();
       $(".otherProjectsRow .otherProjects:nth-child(1)").addClass("otherProjects1 z-depth-1");
       setTimeout(() => {
         $(".otherProjectsRow .otherProjects:nth-child(2)").addClass("otherProjects1 z-depth-3");
@@ -113,12 +116,14 @@ $(document).ready(function(){
       }, 200);
 
     } else {
+      $(".otherProjectsRow").children().slideUp();
       $(".otherProjectsRow .otherProjects:nth-child(1)").removeClass("otherProjects1 z-depth-1");
       $(".otherProjectsRow .otherProjects:nth-child(2)").removeClass("otherProjects1 z-depth-3")
       $(".otherProjectsRow .otherProjects:nth-child(3)").removeClass("otherProjects1 z-depth-5");
     }
     //Other Projects 2nd row -------------------------------------
     if($("nav").offset().top > 1500) {
+      $(".otherProjectsRow2").children().show();
       $(".otherProjectsRow2 .otherProjects:nth-child(3)").addClass("otherProjects1 z-depth-5");
       setTimeout(() => {
         $(".otherProjectsRow2 .otherProjects:nth-child(2)").addClass("otherProjects1 z-depth-3");
@@ -128,6 +133,7 @@ $(document).ready(function(){
       }, 200);
 
     } else {
+      $(".otherProjectsRow2").children().slideUp();
       $(".otherProjectsRow2 .otherProjects:nth-child(3)").removeClass("otherProjects1 z-depth-5");
       $(".otherProjectsRow2 .otherProjects:nth-child(2)").removeClass("otherProjects1 z-depth-3")
       $(".otherProjectsRow2 .otherProjects:nth-child(1)").removeClass("otherProjects1 z-depth-1");
@@ -140,5 +146,4 @@ $(document).ready(function(){
   $(window).scroll(navbarCollapse);
   // using the above function to get the scale-in working when scrolling
   
-    $('.carousel').carousel();
   });
