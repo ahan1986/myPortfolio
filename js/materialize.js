@@ -3,6 +3,7 @@ $(document).ready(function(){
     $("#work").hide();
     $(".trail").hide();
     $(".github").hide();
+    $(".github1").hide();
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("nav").offset().top > 100) {
@@ -81,7 +82,7 @@ $(document).ready(function(){
 // ==========END of TRAIL ==============
 
     if($("nav").offset().top > 720) {
-      $("#cinemappr").addClass("oneImage1 z-depth-5");
+      $("#cinemappr").addClass("oneImage1 z-depth-5"); 
     } else {
       $("#cinemappr").removeClass("oneImage1 z-depth-5");
     }
@@ -92,6 +93,12 @@ $(document).ready(function(){
     } else {
       $("#project2").removeClass("project2 z-depth-5");
       $(".github").slideUp();
+    }
+
+    if($("nav").offset().top > 990) {
+      $(".github1").fadeIn();
+    } else {
+      $(".github1").slideUp();
     }
 
 // ========= Other Projects =========
