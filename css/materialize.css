@@ -248,12 +248,14 @@ img {
 .text {
     background-color: #4CAF50;
     color: white;
-    width: 30%;
+    width: 90%;
+    height: 90%;
     font-size: 16px;
-    padding: 16px 32px;
+    /* padding: 16px 32px; */
     z-index: 10px;
-    transform: translate(130px, -120px);
+    transform: translate(20px, -270px);
     opacity: 0;
+    border-radius: 10%;
 }
 .otherProjects {
     /* border: 1px solid black; */
@@ -280,13 +282,7 @@ img {
     box-shadow: 2px 2px 15px black;
 }
 .text:hover {
-    opacity: 1;
-}
-#dbsuper:hover + .text {
-    opacity: 1;
-}
-#dbsuper:hover {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 #api {
