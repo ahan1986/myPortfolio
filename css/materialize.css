@@ -20,7 +20,7 @@ nav {
 #nav-mobile li a:hover {
     border-radius: 15px;
     border: 1px solid black;
-    z-index: 1000px;
+    z-index: 10px;
     box-shadow: 3px 3px 10px black;
     background-color: #85667fbe;
 }
@@ -242,8 +242,18 @@ img {
 }
 
 /* - - -  Other Projects - - -  */
-.otherProjectsRow {
-
+/* .otherProjects #trivia:hover {
+    opacity: 0.5;
+} */
+.text {
+    background-color: #4CAF50;
+    color: white;
+    width: 30%;
+    font-size: 16px;
+    padding: 16px 32px;
+    z-index: 10px;
+    transform: translate(130px, -120px);
+    opacity: 0;
 }
 .otherProjects {
     /* border: 1px solid black; */
@@ -258,6 +268,7 @@ img {
     transition: all 0.6s ease;
     border-radius: 10%;
 }
+
 #dbsuper {
     background-image: url("../img/dbsuper.png");
     background-size: cover;
@@ -268,6 +279,16 @@ img {
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
 }
+.text:hover {
+    opacity: 1;
+}
+#dbsuper:hover + .text {
+    opacity: 1;
+}
+#dbsuper:hover {
+    opacity: 0.5;
+}
+
 #api {
     background-image: url("../img/api.png");
     background-size: cover;
@@ -278,6 +299,13 @@ img {
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
 }
+#api:hover + .text {
+    opacity: 1;
+}
+#api:hover {
+    opacity: 0.5;
+}
+
 #crystalcollector {
     background-image: url("../img/crystalcollector.png");
     background-size: cover;
@@ -288,6 +316,13 @@ img {
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
 }
+#crystalcollector:hover + .text {
+    opacity: 1;
+}
+#crystalcollector:hover {
+    opacity: 0.5;
+}
+
 #rockpaper {
     background-image: url("../img/rockpaper.png");
     background-size: cover;
@@ -298,6 +333,13 @@ img {
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
 }
+#rockpaper:hover + .text {
+    opacity: 1;
+}
+#rockpaper:hover {
+    opacity: 0.5;
+}
+
 #train {
     background-image: url("../img/train.png");
     background-size: cover;
@@ -308,6 +350,13 @@ img {
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
 }
+#train:hover + .text {
+    opacity: 1;
+}
+#train:hover {
+    opacity: 0.5;
+}
+
 #trivia {
     background-image: url("../img/trivia.png");
     background-size: cover;
@@ -318,6 +367,14 @@ img {
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
 }
+#trivia:hover + .text {
+    opacity: 1;
+}
+#trivia:hover {
+    opacity: 0.5;
+}
+
+
 
 #test {
     height: 80vh;
